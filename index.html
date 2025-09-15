@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Quewer — Frontend</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="logo">
+      <div class="mark">Q</div>
+      <h1>Quewer</h1>
+    </div>
+    <div class="controls" id="top-controls"></div>
+  </header>
+
+  <div class="container">
+    <div class="left" id="left-col">
+      <div class="card" id="newPostCard">
+        <div class="muted">Signed as <span id="user-badge">Guest</span></div>
+        <input id="post-title" type="text" placeholder="Title" />
+        <textarea id="post-body" rows="3" placeholder="Explain more"></textarea>
+        <button class="btn primary" id="post-btn">Post Question</button>
+      </div>
+      <div id="posts-list"></div>
+    </div>
+    <aside class="right">
+      <div class="card" id="profile-card"></div>
+    </aside>
+  </div>
+
+  <div class="footer-split">
+    <div id="tab-home" class="half home">HOME</div>
+    <div id="tab-profile" class="half profile inactive">PROFILE</div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-card" id="modal-card"></div>
+  </div>
+
+  <div class="toast-wrap" id="toasts"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
